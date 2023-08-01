@@ -1,1 +1,1 @@
-workspace for vscode scripts
+Workspace for VSCode scripts

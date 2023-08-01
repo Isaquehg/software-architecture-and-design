@@ -1,1 +1,1 @@
-Workspace for eclipse IDE projects
+Workspace for Eclipse IDE projects
