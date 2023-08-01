@@ -1,0 +1,1 @@
+workspace for vscode scripts
