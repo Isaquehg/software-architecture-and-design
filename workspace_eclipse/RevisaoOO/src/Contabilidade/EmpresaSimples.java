@@ -14,7 +14,6 @@ public class EmpresaSimples implements Tributavel{
 
 	@Override
 	public double getValorISS() {
-		// TODO Auto-generated method stub
 		return faturamentoMensal * 0.08;
 	}
 
