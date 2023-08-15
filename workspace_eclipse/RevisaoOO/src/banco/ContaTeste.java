@@ -32,4 +32,36 @@ public class ContaTeste {
 		
 		assertEquals(saldoAtual, saldoEsperado);
 	}
+	
+	// Testing Polymorphism
+	@Test
+	public void testPolimorfismo() {
+		boolean flagTipoConta = true;
+		
+		Conta conta = null;
+		if(flagTipoConta) {
+			conta = new ContaCorrente();
+		}
+		else {
+			conta = new ContaPoupanca();
+		}
+		
+		conta.depositar(1000.00);
+		conta.rentabilizar();
+		
+		System.out.println( conta.getClass().getName() );
+		System.out.println( conta.saldo );
+	}
+	
+	// Testing toString Override
+	@Test
+	public void testToString() {
+		Conta conta = new ContaCorrente();
+		conta.depositar(10000.00);
+		
+		String actualStr = conta.toString();
+		String expectedStr = "Conta [saldo=10000.0]";
+				
+		assertEquals(actualStr, expectedStr);
+	}
 }
