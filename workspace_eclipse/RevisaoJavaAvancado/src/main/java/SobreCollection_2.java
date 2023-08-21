@@ -27,5 +27,10 @@ public class SobreCollection_2 {
         todasEngenharias.addAll(engenhariasFuturas);
 
         System.out.println(todasEngenharias);
+
+        // isEmpty && size
+        Collection<String> engenharias = new ArrayList<>(todasEngenharias);
+        System.out.println(engenharias.isEmpty());
+        System.out.println(engenharias.size());
     }
 }
