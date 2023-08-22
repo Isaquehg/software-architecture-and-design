@@ -32,5 +32,12 @@ public class SobreCollection_2 {
         Collection<String> engenharias = new ArrayList<>(todasEngenharias);
         System.out.println(engenharias.isEmpty());
         System.out.println(engenharias.size());
+
+        // Clear
+        System.out.println("Engenharias antes:");
+        System.out.println(engenharias);
+        engenharias.clear();
+        System.out.println("Após clear:");
+        System.out.println(engenharias);
     }
 }
