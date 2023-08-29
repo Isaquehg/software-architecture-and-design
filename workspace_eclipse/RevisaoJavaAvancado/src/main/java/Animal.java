@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Animal {
 
     private Long id;
@@ -16,4 +18,23 @@ public class Animal {
         return nome;
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal animal)) return false;
+        return Objects.equals(id, animal.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 }
