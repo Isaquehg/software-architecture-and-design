@@ -1,6 +1,15 @@
 package javaAvancado;
 
+/**
+ * Class to represent Products objects using Java Bean model
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 21/08/2023
+ */
 public class Produto {
+    /**
+     * Product's properties
+     */
     private Long id;
     private String descricao;
     private Double preco;
@@ -35,6 +44,10 @@ public class Produto {
         this.preco = preco;
     }
 
+    /**
+     * toString implementation to print objects
+     * @return object's properties
+     */
     @Override
     public String toString() {
         return "Produto{" +

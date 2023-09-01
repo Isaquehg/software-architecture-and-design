@@ -3,7 +3,17 @@ package javaAvancado;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class to practice Collections
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 28/08/2023
+ */
 public class SobreList_2 {
+    /**
+     * ArrayList implementations
+     * @param args
+     */
     public static void main(String[] args) {
         List<Animal> listaDeAnimais = new ArrayList<>();
         listaDeAnimais.add(new Animal(1L, "Tartaruga"));

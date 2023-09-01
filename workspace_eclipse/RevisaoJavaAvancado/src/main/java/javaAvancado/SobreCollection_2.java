@@ -3,7 +3,17 @@ package javaAvancado;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * Class to practice Collections
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 28/08/2023
+ */
 public class SobreCollection_2 {
+    /**
+     * Collections methods practice
+     * @param args
+     */
     public static void main(String[] args) {
         Collection<String> engenhariasAtuais = new ArrayList<>();
 

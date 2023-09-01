@@ -4,7 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Class to practice Comparators
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 21/08/2023
+ */
 public class SobreComparator_1 {
+    /**
+     * Comparing objects through Comparators classes
+     * @param args
+     */
     public static void main(String[] args) {
         List<Animal> listaDeAnimais = new ArrayList<>();
         listaDeAnimais.add(new Animal(5L, "Girafa"));

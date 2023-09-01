@@ -2,7 +2,17 @@ package javaAvancado;
 
 import java.util.*;
 
+/**
+ * Class to practice Collections
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 21/08/2023
+ */
 public class SobreCollection_1 {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Collection<String> collection = buildCollectionImplementation(5);
         collection.add("Cat");
@@ -12,6 +22,11 @@ public class SobreCollection_1 {
         System.out.println(collection);
     }
 
+    /**
+     * Function for switch Collection implementations
+     * @param a Option for implementation type
+     * @return Collection in desired type
+     */
     private static Collection<String> buildCollectionImplementation(int a){
         // List: Preserva ordem de inserção
         if(a == 1){

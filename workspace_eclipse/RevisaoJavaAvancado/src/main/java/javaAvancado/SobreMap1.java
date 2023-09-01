@@ -2,7 +2,17 @@ package javaAvancado;
 
 import java.util.*;
 
+/**
+ * Class to practice Maps
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 29/08/2023
+ */
 public class SobreMap1 {
+    /**
+     * Implementations of maps using Animal objects
+     * @param args
+     */
     public static void main(String[] args) {
         Animal a1 = new Animal(1L, "Cachorro");
         Animal a2 = new Animal(2L, "Gato");

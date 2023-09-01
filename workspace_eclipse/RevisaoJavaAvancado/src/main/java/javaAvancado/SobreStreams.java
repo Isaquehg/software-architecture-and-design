@@ -3,7 +3,17 @@ package javaAvancado;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for Streams and functional programming practice
+ *  * @author Isaquehg
+ *  * @version 1.0
+ *  * @since 29/08/2023
+ */
 public class SobreStreams {
+    /**
+     * Implementation of multiple streams' methods and utilities using a products list.
+     * @param args
+     */
     public static void main(String[] args) {
         List<Produto> produtoList = new ArrayList<>();
         produtoList.add(new Produto(1L, "Cadeira", 100.0));
