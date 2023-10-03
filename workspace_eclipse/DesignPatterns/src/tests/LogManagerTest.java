@@ -1,9 +1,12 @@
-package singleton
+package tests;
 
-import static org.junit.jupyter.api.Test
+import singleton.LogManager;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class LogManagerTest {
-
     @Test
     public void dada2Instancias_quandoGetInstance_entaoSeraAMesmaReferencia(){
         LogManager instance1 = LogManager.getInstance();
