@@ -2,7 +2,6 @@ package tests;
 
 import builder.carro.*;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -24,7 +23,7 @@ public class CarroBuilderTest {
         carroBuilder.buildMotor(motorVTEC);
         carroBuilder.buildFreioABS(freioABS);
 
-        Carro carroPronto = carroBuilder.getCaro();
+        Carro carroPronto = carroBuilder.getCarro();
 
         // Asserts
         assertNotNull(carroPronto);
@@ -53,7 +52,7 @@ public class CarroBuilderTest {
         carroBuilder.buildFreioABS(freioABS);
 
         try{
-            Carro carroPronto = carroBuilder.getCaro();
+            Carro carroPronto = carroBuilder.getCarro();
         }
         catch (IllegalStateException e){
             System.out.println("Lancou exception, como esperado");
@@ -78,7 +77,7 @@ public class CarroBuilderTest {
         carroBuilder.buildFreioABS(freioABS);
 
         try{
-            Carro carroPronto = carroBuilder.getCaro();
+            Carro carroPronto = carroBuilder.getCarro();
         }
         catch (IllegalStateException e){
             System.out.println("Lancou exception, como esperado");

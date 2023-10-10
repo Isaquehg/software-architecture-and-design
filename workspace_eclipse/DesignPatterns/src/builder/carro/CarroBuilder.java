@@ -5,19 +5,19 @@ public class CarroBuilder {
 	private Carro carro = new Carro();
 
 	public void buildPortas(Porta[] portas) {
-
+		carro.setPortas(portas);
 	}
 
 	public void buildMotor(Motor motor) {
-
+		carro.setMotor(motor);
 	}
 
 	public void buildCompBordo(ComputadorDeBordo compBordo) {
-
+		carro.setComputadorBordo(compBordo);
 	}
 
 	public void buildFreioABS(FreioABS freioABS) {
-
+		carro.setFreioABS(freioABS);
 	}
 
 	private void validarPortas(){
@@ -37,7 +37,7 @@ public class CarroBuilder {
 		}
 	}
 
-	public Carro getCaro() {
+	public Carro getCarro() {
 		// Sanitizing car construction
 		validarMotor();
 		validarPortas();
