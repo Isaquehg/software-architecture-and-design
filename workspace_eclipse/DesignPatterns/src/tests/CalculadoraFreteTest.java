@@ -19,7 +19,7 @@ public class CalculadoraFreteTest {
     public void deveCalcularFreteParaDhl(){
         CalculadoraFrete calculadoraFrete = new CalculadoraFrete();
         double valorAtual = calculadoraFrete.calcularValor(new ServicoFreteDhl(), 0.0);
-        double valorEsperado = 190.0;
+        double valorEsperado = 100.0;
 
         assertEquals(valorAtual, valorEsperado);
     }
@@ -29,6 +29,15 @@ public class CalculadoraFreteTest {
         CalculadoraFrete calculadoraFrete = new CalculadoraFrete();
         ServicoFreteJadlog servicoFreteJadlog = new ServicoFreteJadlog();
         double valorAtual = calculadoraFrete.calcularValor(servicoFreteJadlog, 0.0);
+        double valorEsperado = 0.0;
+
+        assertEquals(valorAtual, valorEsperado);
+    }
+
+    @Test
+    public void deveCalcularFreteParaFedEx(){
+        CalculadoraFrete calculadoraFrete = new CalculadoraFrete();
+        double valorAtual = calculadoraFrete.calcularValor(new ServicoFreteFedEx(), 0.0);
         double valorEsperado = 0.0;
 
         assertEquals(valorAtual, valorEsperado);
