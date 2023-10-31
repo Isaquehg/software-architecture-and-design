@@ -1,6 +1,17 @@
 package strategy.frete;
 
+/**
+ * Class for delivery's costs calculation
+ * @author Isaque
+ * @version 1.0
+ * @since 23/10/23
+ */
 public class CalculadoraFrete{
+    /**
+     * Calculate delivery value
+     * @param pesoEmKg weight of the delivered object
+     * @return value to pay for
+     */
     public double calcularValor(Fretavel fretavel, double pesoEmKg){
         return fretavel.calcularValor(pesoEmKg);
 

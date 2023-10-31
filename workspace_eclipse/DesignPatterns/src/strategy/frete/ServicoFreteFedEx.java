@@ -1,5 +1,11 @@
 package strategy.frete;
 
+/**
+ * FedEx's specification from interface
+ * @author Isaque
+ * @version 1.0
+ * @since 23/10/23
+ */
 public class ServicoFreteFedEx implements Fretavel{
     @Override
     public double calcularValor(double pesoEmKg) {

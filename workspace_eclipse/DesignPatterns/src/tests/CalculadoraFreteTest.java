@@ -4,7 +4,16 @@ import org.junit.jupiter.api.Test;
 import strategy.frete.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Test class for CalculadorFrete
+ * @author isaquehg
+ * @version 1.0
+ * @since 23/10/23
+ */
 public class CalculadoraFreteTest {
+    /**
+     * Test case to calculate the shipping cost for the Sedex service.
+     */
     @Test
     public void deveCalcularFreteParaSedex(){
         CalculadoraFrete calculadoraFrete = new CalculadoraFrete();
@@ -15,6 +24,9 @@ public class CalculadoraFreteTest {
         assertEquals(valorAtual, valorEsperado);
     }
 
+    /**
+     * Test case to calculate the shipping cost for the DHL service.
+     */
     @Test
     public void deveCalcularFreteParaDhl(){
         CalculadoraFrete calculadoraFrete = new CalculadoraFrete();
@@ -24,6 +36,9 @@ public class CalculadoraFreteTest {
         assertEquals(valorAtual, valorEsperado);
     }
 
+    /**
+     * Test case to calculate the shipping cost for the JadLog service.
+     */
     @Test
     public void deveCalcularFreteParaJadlog(){
         CalculadoraFrete calculadoraFrete = new CalculadoraFrete();
@@ -34,6 +49,9 @@ public class CalculadoraFreteTest {
         assertEquals(valorAtual, valorEsperado);
     }
 
+    /**
+     * Test case to calculate the shipping cost for the FedEx service.
+     */
     @Test
     public void deveCalcularFreteParaFedEx(){
         CalculadoraFrete calculadoraFrete = new CalculadoraFrete();

@@ -1,5 +1,11 @@
 package br.inatel.labs.padraomvc.model.entity;
 
+/**
+ * Class for product representation
+ * @author Isaque
+ * @version 1.0
+ * @since 30/10/23
+ */
 public class Produto {
 
     private Long id;

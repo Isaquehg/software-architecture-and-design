@@ -2,11 +2,23 @@ package strategy.impostos;
 
 import java.time.LocalDate;
 
+/**
+ * Ticker class representation
+ * @author Isaque
+ * @version 1.0
+ * @since 23/10/23
+ */
 public class NotaFiscal {
     private long numero;
     private LocalDate dataEmissao;
     private double valorTotal;
 
+    /**
+     * Constructor for invoice's object
+     * @param ID
+     * @param invoice's inssuance date
+     * @param invoice's value
+     */
     public NotaFiscal(long numero, LocalDate dataEmissao, double valorTotal) {
         this.numero = numero;
         this.dataEmissao = dataEmissao;

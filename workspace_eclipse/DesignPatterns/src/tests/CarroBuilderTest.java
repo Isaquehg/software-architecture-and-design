@@ -5,7 +5,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test class for CarroBuilder
+ * @author isaquehg
+ * @version 1.0
+ * @since 9/10/23
+ */
 public class CarroBuilderTest {
+
+    /**
+     * Test case to ensure that a Carro is correctly built using the CarroBuilder
+     * with valid components (Motor, Portas, ComputadorDeBordo, and FreioABS).
+     *
+     * - Valid components are created (Motor, Portas, ComputadorDeBordo, and FreioABS).
+     * - The CarroBuilder is used to build a Carro instance.
+     * - Assertions are made to ensure that the Carro is constructed correctly.
+     */
     @Test
     public void dadoPartesValidas_quandoGetCarro_entaoCarroEhConstruido(){
         // Partes válidas
@@ -34,6 +49,12 @@ public class CarroBuilderTest {
         assertNotNull(carroPronto.getFreioABS());
     }
 
+    /**
+     * Test case to ensure that an exception is thrown when attempting to build a Carro
+     * without a Motor component using the CarroBuilder.
+     *
+     * - An attempt is made to build a Carro without a Motor component, and an exception is expected.
+     */
     @Test
     public void dadoCarroSemMotor_quandoGetCarro_lancaException(){
         // Partes
@@ -59,6 +80,12 @@ public class CarroBuilderTest {
         }
     }
 
+    /**
+     * Test case to ensure that an exception is thrown when attempting to build a Carro
+     * without Portas components using the CarroBuilder.
+     *
+     * - An attempt is made to build a Carro without Portas components, and an exception is expected.
+     */
     @Test
     public void dadoCarroSemPortas_quandoGetCarro_lancaException(){
         // Partes

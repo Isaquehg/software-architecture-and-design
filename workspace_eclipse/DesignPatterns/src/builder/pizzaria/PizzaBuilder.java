@@ -1,5 +1,11 @@
 package builder.pizzaria;
 
+/**
+ * Builder desing for Pizza class
+ * @author Isaque
+ * @version 1.0
+ * @since 10/10/23
+ */
 public class PizzaBuilder {
 
     private Pizza pizza = new Pizza();

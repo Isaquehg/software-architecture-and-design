@@ -1,5 +1,11 @@
 package builder.carro;
 
+/**
+ * Class for buiding Car's Class (Fluent)
+ * @author Isaque
+ * @version 1.0
+ * @since 10/10/23
+ */
 public class CarroBuilderFluente {
 
     private Carro carro = new Carro();

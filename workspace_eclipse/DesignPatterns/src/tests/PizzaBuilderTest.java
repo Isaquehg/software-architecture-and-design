@@ -6,7 +6,23 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test class for PizzaBuilder
+ * @author isaquehg
+ * @version 1.0
+ * @since 10/10/23
+ */
 public class PizzaBuilderTest {
+
+    /**
+     * Test case to ensure that a Pizza is correctly built using the PizzaBuilder
+     * with valid components (Cheese, Peperoni, and a valid size).
+     *
+     * - Valid components are added to the pizza using the builder.
+     * - The pizza's size is set.
+     * - The PizzaBuilder is used to construct a Pizza instance.
+     * - Assertions are made to ensure that the Pizza is constructed correctly.
+     */
     @Test
     public void dadosPartesValidas_quandoGetPizza_entaoPizzaEhConstruida(){
         Pizza pizzaPronta = new PizzaBuilder()
@@ -21,6 +37,12 @@ public class PizzaBuilderTest {
         assertTrue(pizzaPronta.getFlagCheese());
     }
 
+    /**
+     * Test case to ensure that an exception is thrown when attempting to build a Pizza
+     * with an invalid size using the PizzaBuilder.
+     *
+     * - An attempt is made to build a Pizza with an invalid size, and an exception is expected.
+     */
     @Test
     public void dadoPizzaComTamanhoErrado_quandoGetPizza_entaoLancaException(){
         Integer tamanhoErrado = 4;
@@ -46,6 +68,12 @@ public class PizzaBuilderTest {
         }*/
     }
 
+    /**
+     * Test case to ensure that an exception is thrown when attempting to build a Pizza
+     * without any ingredients using the PizzaBuilder.
+     *
+     * - An attempt is made to build a Pizza without adding any ingredients, and an exception is expected.
+     */
     @Test
     public void dadoPizzaSemIngrediente_quandoGetPizza_entaoLancaException(){
         assertThrows(IllegalStateException.class, () -> {

@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service for Products
+ * @author Isaque
+ * @version 1.0
+ * @since 30/10/23
+ */
 @Service
 public class ProdutoService {
 

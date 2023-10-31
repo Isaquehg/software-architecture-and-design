@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Controller for Products
+ * @author Isaque
+ * @version 1.0
+ * @since 30/10/23
+ */
 @Controller
 public class ProdutoController {
 
