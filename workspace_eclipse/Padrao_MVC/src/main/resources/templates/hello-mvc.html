@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <style>
+        body {
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,16,191,1) 35%, rgba(0,212,255,1) 100%);
+            color: white;
+            margin-left: 20em;
+            margin-top: 6em;
+            font-size: 25px;
+            font-family: "Arial"
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello <span th:text="${usuario}"></span></h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>

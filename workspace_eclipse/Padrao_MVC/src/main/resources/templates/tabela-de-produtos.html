@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela de Produtos</title>
+    <style>
+        body {
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,16,191,1) 35%, rgba(0,212,255,1) 100%);
+            color: white;
+            font-size: 25px;
+            font-family: "Arial"
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela de Produtos</h1>
+    <table>
+        <tr>
+            <td>Descrição</td>
+            <td>Preço</td>
+        </tr>
+        <tr th:each="pvar:${listaProdutos}">
+            <td th:text="${pvar.descricao}"></td>
+            <td th:text="${pvar.preco}"></td>
+        </tr>
+    </table>
+</body>
+</html>
