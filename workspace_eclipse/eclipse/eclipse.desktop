@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Eclipse
-Comment=Integrated Development Environment for Java, etc.
-Icon=/6semestre/ADS_IsaqueHollanda/workspace_eclipse/eclipse/icon.xpm
-Exec=/6semestre/ADS_IsaqueHollanda/workspace_eclipse/eclipse/eclipse
-Terminal=false
-Categories=Development;IDE;
