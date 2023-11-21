@@ -1,0 +1,36 @@
+<h1>Book Table</h1>
+
+<table id="book-table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Category</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Adventures of Sherlock Holmes</td>
+      <td>Investigation</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>The Chronicles of Narnia</td>
+      <td>Fiction</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Steve Jobs</td>
+      <td>Biography</td>
+    </tr>
+    <ng-container *ngFor="let b of books">
+      <tr>
+        <td>{{ b.id }}</td>
+        <td>{{ b.title }}</td>
+        <td>{{ b.category }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
