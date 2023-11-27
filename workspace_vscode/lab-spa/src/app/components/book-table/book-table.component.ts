@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IBook } from 'src/app/models/i-book';
+import { AlertService } from 'src/app/services/alert.service';
 import { BookService } from 'src/app/services/book.service';
 
 @Component({
@@ -11,17 +12,17 @@ export class BookTableComponent implements OnInit{
 
   books: IBook[] = [];
 
-  constructor(private service: BookService) { }
+  // Services injections from Books and from Alert
+  constructor(private service: BookService, private alertService: AlertService) { }
 
   ngOnInit(): void {
-    this.books = [
-      {id: 4, title: "Elon Musk", category: "Biography"},
-      {id: 5, title: "Physics IV", category: "Academic"},
-      {id: 6, title: "Uber", category: "Biography"}
-    ];
-
-    for (let b of this.books){
-      console.log(b)
-    }
+    this.service.findAll().subscribe({
+      next: (data) => this.books = data,
+      error: (err) => {
+        const tit = 'Erro ao buscar livros!';
+        const msg = err.message;
+        this.alertService.error(tit, msg);
+      }
+    });
   }
 }
