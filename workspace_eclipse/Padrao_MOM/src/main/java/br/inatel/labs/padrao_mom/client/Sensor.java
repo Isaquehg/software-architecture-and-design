@@ -6,7 +6,7 @@ import java.util.Random;
  * @author isaquehg
  * @since 4/12/23
  * @version 1.0
- * Sensor object
+ * Sensor object with reading buitl-in methods
  */
 public class Sensor {
     public double readTemp(){
